@@ -106,10 +106,16 @@ p {
 }
 
 /* ==========================================================================
-   KUSTOMISASI KHUSUS DESAIN CARD DEPAN: ARCH COKLAT MUDA PASTEL SOFT (MURNI CSS)
+   KUSTOMISASI KHUSUS DESAIN CARD DEPAN: MENGGUNAKAN FOTO TERLAMPIR (UPDATE)
    ========================================================================== */
 .premium-arch-card-cover {
-    background: #EEDCC6; /* Cokelat muda pastel yang sangat lembut dan soft */
+    /* MENGGUNAKAN FOTO SEBAGAI LATA BELAKANG KARTU */
+    background-image: url('1000120091.jpg'); /* Masukkan nama file foto Anda di sini */
+    background-size: cover; /* Foto menutupi seluruh area kartu */
+    background-position: center; /* Foto diposisikan di tengah */
+    background-repeat: no-repeat;
+    
+    /* Bingkai putih tetap dipertahankan */
     border: 4px solid #FDFBF9; 
     border-radius: 300px 300px 40px 40px;
     padding: 60px 30px 45px 30px;
@@ -125,6 +131,11 @@ p {
 .cover-content-arch {
     position: relative;
     z-index: 10;
+    /* Memberikan latar belakang sedikit gelap transparan agar teks mudah dibaca */
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50%; /* Menurunkan konten teks agar tidak menutupi muka bayi */
 }
 .premium-arch-card-cover .cover-subtitle { letter-spacing: 5px; font-size: 0.75rem; color: var(--primary); font-weight: 600; margin-bottom: 10px; text-transform: uppercase;}
 .premium-arch-card-cover .baby-name-title { font-size: 2.2rem; color: #3E271C; margin: 10px 0 15px 0; font-weight: 600; line-height: 1.3;}
@@ -144,47 +155,11 @@ p {
     box-shadow: 0 10px 25px rgba(50, 30, 20, 0.3);
 }
 
-/* PURE CSS ART VECTOR INTERNAL: BERUANG DAN BALON */
-.css-illustration-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -110px;
-    margin-bottom: 20px;
-    position: relative;
-    height: 190px;
-}
-.css-balloon-group { position: absolute; top: 0; width: 140px; height: 90px; }
-.css-b-balloon { position: absolute; border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%; box-shadow: inset -5px -5px 10px rgba(0,0,0,0.05); }
-.cb1 { width: 45px; height: 52px; background: #FFFDFB; top: 10px; left: 10px; transform: rotate(-15deg); opacity: 0.95;}
-.cb2 { width: 42px; height: 50px; background: #F2E6D8; top: 0px; left: 45px; z-index: 2; }
-.cb3 { width: 48px; height: 55px; background: #FFF; top: 15px; right: 10px; transform: rotate(15deg); }
-.cb4 { width: 38px; height: 45px; background: #DCC7B3; top: 30px; left: 30px; opacity: 0.9; }
-.cb5 { width: 40px; height: 48px; background: #E8D8C8; top: 32px; right: 35px; opacity: 0.9; }
-
-.css-bear { position: absolute; bottom: 0; width: 100px; height: 90px; z-index: 5; animation: gentleNod 4s ease-in-out infinite; }
-.bear-head { width: 76px; height: 64px; background: #D7C0A7; border-radius: 50% 50% 46% 46%; position: absolute; top: 10px; left: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-.bear-ear { width: 24px; height: 24px; background: #D7C0A7; border-radius: 50%; position: absolute; }
-.bear-ear::after { content: ''; position: absolute; width: 14px; height: 14px; background: #E8D8C8; border-radius: 50%; top: 5px; left: 5px; }
-.bear-ear.left { top: 2px; left: 6px; }
-.bear-ear.right { top: 2px; right: 6px; }
-.bear-eye { width: 7px; height: 7px; background: #4A3226; border-radius: 50%; position: absolute; top: 26px; }
-.bear-eye.left { left: 22px; }
-.bear-eye.right { right: 22px; }
-.bear-muzzle { width: 32px; height: 24px; background: #F8F4EE; border-radius: 50%; position: absolute; bottom: 8px; left: 22px; }
-.bear-nose { width: 12px; height: 8px; background: #4A3226; border-radius: 6px 6px 50% 50%; position: absolute; top: 4px; left: 10px; }
-.bear-body { width: 64px; height: 30px; background: #CBB296; border-radius: 50% 50% 0 0; position: absolute; bottom: -12px; left: 18px; z-index: -1; }
-
-.css-hot-air { position: absolute; bottom: -25px; display: flex; flex-direction: column; align-items: center; z-index: 15; animation: gentleFloat 5s ease-in-out infinite alternate; }
-.left-corner { left: -30px; }
-.right-corner { right: -30px; animation-delay: 1.5s; }
-.balloon-sphere { width: 70px; height: 76px; background: radial-gradient(circle at 30% 30%, #FFFDFB 0%, #E8D8C8 80%); border-radius: 50% 50% 50% 50% / 45% 45% 55% 55%; box-shadow: 0 8px 20px rgba(92, 64, 51, 0.15); position: relative; }
-.balloon-sphere::after { content: ''; position: absolute; width: 30px; height: 100%; background: rgba(255, 255, 255, 0.25); left: 20px; border-radius: 50%; }
-.basket-box { width: 20px; height: 15px; background: #A67C52; border-radius: 3px; margin-top: 8px; position: relative; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-.basket-box::before { content: ''; position: absolute; top: -8px; left: 3px; right: 3px; height: 8px; border-left: 1px dashed #4A3226; border-right: 1px dashed #4A3226; opacity: 0.6; }
+/* HAPUS SEMUA KODE CSS ILUSTRASI INTERNAL */
+.css-illustration-top, .css-balloon-group, .css-bear, .css-hot-air { display: none !important; }
 
 /* ==========================================================================
-   SECTIONS STRUCTURE WITH DELIBERATE WHITESPACE (ASLI SEBELUM REVISI GAMBAR)
+   SECTIONS STRUCTURE WITH DELIBERATE WHITESPACE (ASLI)
    ========================================================================== */
 .section { 
     padding: 110px 0; 
@@ -653,10 +628,9 @@ p {
     
     /* Responsive Penyesuaian Arch Cover */
     .premium-arch-card-cover { border-radius: 220px 220px 30px 30px; width: 92%; padding: 50px 16px 35px 16px; }
-    .css-illustration-top { margin-top: -95px; transform: scale(0.85); }
-    .css-hot-air { transform: scale(0.75); bottom: -20px; }
-    .left-corner { left: -20px; }
-    .right-corner { right: -20px; }
+    
+    /* Ilustrasi CSS dihapus di mobile */
+    .css-illustration-top { display: none !important; }
 }
 
 /* Styling Tambahan untuk Foto Galeri Real */
@@ -673,4 +647,3 @@ p {
         aspect-ratio: 1/1; /* Tinggi foto saat dibuka di layar HP */
     }
 }
-
