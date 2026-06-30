@@ -110,7 +110,7 @@ p {
    ========================================================================== */
 .premium-arch-card-cover {
     /* MENGGUNAKAN FOTO SEBAGAI LATA BELAKANG KARTU */
-    background-image: url('1000120091.jpg'); /* Masukkan nama file foto Anda di sini */
+    background-image: url('assets/pictures/1000120091.jpg'); /* Masukkan nama file foto Anda di sini */
     background-size: cover; /* Foto menutupi seluruh area kartu */
     background-position: center; /* Foto diposisikan di tengah */
     background-repeat: no-repeat;
